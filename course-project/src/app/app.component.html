@@ -1,0 +1,11 @@
+<app-header (recipesClicked)="renderRecipesComponent($even)" (shoppingListClicked)="renderShoppingListComponent($even)"></app-header>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+
+      <app-recipes *ngIf="renderRecipes"></app-recipes>
+      <app-shopping-list *ngIf="renderShoppingList"></app-shopping-list>
+
+    </div>
+  </div>
+</div>
